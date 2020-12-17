@@ -14,6 +14,11 @@ const routes = [
 		component: () => import('../components/gisTools/ViewerInit.vue'),
 	},
 	{
+		path: '/PointDemo',
+		name: 'PointDemo',
+		component: () => import('../views/vecLayer/PointDemo.vue'),
+	},
+	{
 		path: '/oneMap',
 		name: 'OneMap',
 		component: () => import('../views/oneMap/OneMap.vue'),

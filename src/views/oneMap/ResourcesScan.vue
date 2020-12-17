@@ -28,7 +28,7 @@ export default {
 		this.map = this.$refs.mapInit.map
 		this.mapInit = true
 		const ol3d = new OLCesium({ map: this.$refs.mapInit.map })
-		ol3d.setEnabled(false)
+		ol3d.setEnabled(true)
 	},
 }
 </script>
