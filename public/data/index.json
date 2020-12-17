@@ -1,0 +1,299 @@
+{
+	"code": 200,
+	"msg": "ok",
+	"data": [
+		{
+			"label": "双评价成果展示",
+			"children": [
+				{
+					"label": "农业生产适宜性等级分布图",
+					"LAYERS": "智慧国土大数据展示平台:农业生产适宜性等级分布图",
+					"id": 1,
+					"checked": false
+				},
+				{
+					"label": "永久基本农田农业适宜性等级",
+					"LAYERS": "智慧国土大数据展示平台:永久基本农田农业适宜性等级",
+					"id": 2,
+					"checked": false
+				},
+				{
+					"label": "土壤质地评价",
+					"LAYERS": "智慧国土大数据展示平台:土壤质地评价",
+					"id": 3,
+					"checked": false
+				},
+				{
+					"label": "农业生产条件初判等级",
+					"LAYERS": "智慧国土大数据展示平台:农业生产条件初判等级",
+					"id": 4,
+					"checked": false
+				},
+				{
+					"label": "气候条件评价",
+					"LAYERS": "智慧国土大数据展示平台:气候条件评价",
+					"id": 5,
+					"checked": false
+				},
+				{
+					"label": "水资源评价",
+					"LAYERS": "智慧国土大数据展示平台:水资源评价",
+					"id": 6,
+					"checked": false
+				},
+				{
+					"label": "土地资源评价等级",
+					"LAYERS": "智慧国土大数据展示平台:土地资源评价等级",
+					"id": 7,
+					"checked": false
+				},
+				{
+					"label": "现状耕地农业适宜性等级",
+					"LAYERS": "智慧国土大数据展示平台:现状耕地农业适宜性等级",
+					"id": 8,
+					"checked": false
+				},
+				{
+					"label": "坡度分级",
+					"LAYERS": "智慧国土大数据展示平台:坡度分级",
+					"id": 9,
+					"checked": false
+				},
+				{
+					"label": "气象灾害评价等级",
+					"LAYERS": "智慧国土大数据展示平台:气象灾害评价等级",
+					"id": 10,
+					"checked": false
+				},
+				{
+					"label": "水土资源基础评价等级",
+					"LAYERS": "智慧国土大数据展示平台:水土资源基础评价等级",
+					"id": 11,
+					"checked": false
+				},
+				{
+					"label": "农业生产条件修正等级",
+					"LAYERS": "智慧国土大数据展示平台:农业生产条件修正等级",
+					"id": 12,
+					"checked": false
+				},
+				{
+					"label": "行政界线",
+					"LAYERS": "智慧国土大数据展示平台:行政界线",
+					"id": 13,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "耕地质量等别评价",
+			"children": [
+				{
+					"label": "2018年县级耕地分等单元",
+					"LAYERS": "智慧国土大数据展示平台:2018年县级耕地分等单元",
+					"id": 14,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "生态保护红线",
+			"children": [
+				{
+					"label": "生态保护红线",
+					"LAYERS": "智慧国土大数据展示平台:生态保护红线",
+					"id": 15,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "永久基本农田",
+			"children": [
+				{
+					"label": "永久基本农田保护图斑",
+					"LAYERS": "智慧国土大数据展示平台:永久基本农田保护图斑",
+					"id": 16,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "气象气候",
+			"children": [
+				{
+					"label": "＞10℃积温",
+					"LAYERS": "智慧国土大数据展示平台:＞10℃积温",
+					"id": 17,
+					"checked": false
+				},
+				{
+					"label": "大风灾害",
+					"LAYERS": "智慧国土大数据展示平台:大风灾害",
+					"id": 18,
+					"checked": false
+				},
+				{
+					"label": "干旱灾害",
+					"LAYERS": "智慧国土大数据展示平台:干旱灾害",
+					"id": 19,
+					"checked": false
+				},
+				{
+					"label": "暴雨灾害",
+					"LAYERS": "智慧国土大数据展示平台:暴雨灾害",
+					"id": 20,
+					"checked": false
+				},
+				{
+					"label": "气象站点",
+					"LAYERS": "智慧国土大数据展示平台:气象站点",
+					"id": 21,
+					"checked": false
+				},
+				{
+					"label": "高温热害",
+					"LAYERS": "智慧国土大数据展示平台:高温热害",
+					"id": 22,
+					"checked": false
+				},
+				{
+					"label": "年降水量",
+					"LAYERS": "智慧国土大数据展示平台:年降水量",
+					"id": 23,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "实地调研",
+			"children": [
+				{
+					"label": "中心城区现状建成区范围",
+					"LAYERS": "智慧国土大数据展示平台:中心城区现状建成区范围",
+					"id": 24,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "境界与政区",
+			"children": [
+				{
+					"label": "乡镇行政区",
+					"LAYERS": "智慧国土大数据展示平台:乡镇行政区",
+					"id": 25,
+					"checked": false
+				},
+				{
+					"label": "村级行政区",
+					"LAYERS": "智慧国土大数据展示平台:村级行政区",
+					"id": 26,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "城镇总体规划",
+			"children": [
+				{
+					"label": "规划用途分类",
+					"LAYERS": "智慧国土大数据展示平台:规划用途分类",
+					"id": 27,
+					"checked": false
+				},
+				{
+					"label": "规划用地范围",
+					"LAYERS": "智慧国土大数据展示平台:规划用地范围",
+					"id": 28,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "地貌",
+			"children": [
+				{
+					"label": "坡度图",
+					"LAYERS": "智慧国土大数据展示平台:坡度图",
+					"id": 29,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "土地利用总体规划",
+			"children": [
+				{
+					"label": "建设用地管制区",
+					"LAYERS": "智慧国土大数据展示平台:建设用地管制区",
+					"id": 30,
+					"checked": false
+				},
+				{
+					"label": "中心城区规划控制范围",
+					"LAYERS": "智慧国土大数据展示平台:中心城区规划控制范围",
+					"id": 31,
+					"checked": false
+				},
+				{
+					"label": "土地用途区",
+					"LAYERS": "智慧国土大数据展示平台:土地用途区",
+					"id": 32,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "国土三调",
+			"children": [
+				{
+					"label": "三调地类图斑",
+					"LAYERS": "智慧国土大数据展示平台:三调地类图斑",
+					"id": 33,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "农业",
+			"children": [
+				{
+					"label": "土壤质地",
+					"LAYERS": "智慧国土大数据展示平台:土壤质地",
+					"id": 34,
+					"checked": false
+				},
+				{
+					"label": "农田灌排条件",
+					"LAYERS": "智慧国土大数据展示平台:农田灌排条件",
+					"id": 35,
+					"checked": false
+				},
+				{
+					"label": "熟制",
+					"LAYERS": "智慧国土大数据展示平台:熟制",
+					"id": 36,
+					"checked": false
+				},
+				{
+					"label": "土壤条件",
+					"LAYERS": "智慧国土大数据展示平台:土壤条件",
+					"id": 37,
+					"checked": false
+				}
+			]
+		},
+		{
+			"label": "武功县三调遥感影像",
+			"children": [
+				{
+					"label": "武功县三调遥感影像",
+					"LAYERS": "智慧国土大数据展示平台:610431BJ2DOM1",
+					"id": 37,
+					"checked": false
+				}
+			]
+		}
+	]
+}
