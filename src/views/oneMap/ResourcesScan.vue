@@ -8,6 +8,9 @@
 <script>
 import MapInit from '../../components/gisTools/MapInit.vue'
 import LayerListPan from './LayerListPan.vue'
+import OLCesium from 'olcs/OLCesium.js'
+import * as Cesium from 'cesium'
+window.Cesium = Cesium
 export default {
 	name: 'ReourcesScan',
 	components: {
@@ -24,6 +27,8 @@ export default {
 	mounted() {
 		this.map = this.$refs.mapInit.map
 		this.mapInit = true
+		const ol3d = new OLCesium({ map: this.$refs.mapInit.map })
+		ol3d.setEnabled(false)
 	},
 }
 </script>

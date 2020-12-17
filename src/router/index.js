@@ -2,35 +2,39 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
-
 // 定义路由
 const routes = [
 	{
 		path: '/',
-		redirect:'/oneMap/resourcesScan'
+		redirect: '/oneMap/resourcesScan',
 	},
 	{
-		path:'/oneMap',
-		name:'OneMap',
-		component:()=>import('../views/oneMap/OneMap.vue'),
-		children:[
+		path: '/viewer',
+		name: 'Viewer',
+		component: () => import('../components/gisTools/ViewerInit.vue'),
+	},
+	{
+		path: '/oneMap',
+		name: 'OneMap',
+		component: () => import('../views/oneMap/OneMap.vue'),
+		children: [
 			{
-				path:'/oneMap/resourcesScan',
-				name:'ResourcesScan',
-				component:()=>import('../views/oneMap/ResourcesScan.vue')
+				path: '/oneMap/resourcesScan',
+				name: 'ResourcesScan',
+				component: () => import('../views/oneMap/ResourcesScan.vue'),
 			},
 			{
-				path:'/oneMap/themeMap',
-				name:'ThemeMap',
-				component:()=>import('../views/oneMap/ThemeMap.vue')
+				path: '/oneMap/themeMap',
+				name: 'ThemeMap',
+				component: () => import('../views/oneMap/ThemeMap.vue'),
 			},
 			{
-				path:'/oneMap/ContrastiveAnalysis',
-				name:'ContrastiveAnalysis',
-				component:()=>import('../views/oneMap/ContrastiveAnalysis.vue')
-			}
-		]
-	}
+				path: '/oneMap/ContrastiveAnalysis',
+				name: 'ContrastiveAnalysis',
+				component: () => import('../views/oneMap/ContrastiveAnalysis.vue'),
+			},
+		],
+	},
 ]
 
 // 创建router实例
