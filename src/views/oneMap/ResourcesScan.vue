@@ -2,6 +2,7 @@
 	<div class="map-resource-container">
 		<map-init ref="mapInit" />
 		<layer-list-pan :map="map" v-if="mapInit" />
+		<el-button type="primary" class="switch-bt" @click.stop="switchMode">{{show3D?'切换二维':'切换三维'}}</el-button>
 	</div>
 </template>
 
@@ -17,18 +18,30 @@ export default {
 		MapInit,
 		LayerListPan,
 	},
+	methods:{
+		switchMode(){
+			const show3D = !this.show3D
+			this.show3D = show3D
+			this.ol3d.setEnabled(show3D)
+		}
+	},
 	data() {
 		return {
 			map: {},
 			// 地图实例初始化成功
 			mapInit: false,
+			// 显示三维
+			show3D: false,
+			// ol-cesium对象
+			ol3d: undefined,
 		}
 	},
 	mounted() {
 		this.map = this.$refs.mapInit.map
 		this.mapInit = true
 		const ol3d = new OLCesium({ map: this.$refs.mapInit.map })
-		ol3d.setEnabled(true)
+		this.ol3d = ol3d
+		ol3d.setEnabled(false)
 	},
 }
 </script>
@@ -36,9 +49,9 @@ export default {
 <style scoped lang="less">
 .map-resource-container {
 	height: calc(~'100vh - 61px');
-	.test-bt {
+	.switch-bt {
 		position: absolute;
-		top: 100px;
+		top: 70px;
 		right: 100px;
 	}
 	.test-bt-2 {

@@ -11,6 +11,7 @@ import { Vector as VectorSource } from 'ol/source'
 import GeoJSON from 'ol/format/GeoJSON'
 import PointData from './data/demo-label-style-line.js'
 import { Circle as CircleStyle, Fill, Stroke, Style } from 'ol/style'
+import {fromLonLat} from 'ol/proj'
 
 const image = new CircleStyle({
 	radius: 5,
@@ -97,8 +98,12 @@ export default {
 			source: vectorSource,
 			style: styleFunction,
     })
-    console.log(vecLayer)
 		map.addLayer(vecLayer)
+		const view = map.getView()
+		const center = view.getCenter()
+		const centerTransform = fromLonLat(center,'EPSG:4326')
+		console.log(centerTransform)
+		console.log(view)
 	},
 	components: {
 		MapInit,
