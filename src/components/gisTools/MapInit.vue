@@ -4,8 +4,8 @@
 
 <script>
 import { Map, View } from 'ol'
-import TileLayer from 'ol/layer/Tile'
-import XYZ from 'ol/source/XYZ'
+// import TileLayer from 'ol/layer/Tile'
+// import XYZ from 'ol/source/XYZ'
 import { fromLonLat } from 'ol/proj'
 import { defaults } from 'ol/control'
 
@@ -24,14 +24,14 @@ export default {
 			const map = new Map({
 				target: 'map',
 				layers: [
-					new TileLayer({
-						source: new XYZ({
-							url:
-								'https://mt1.google.cn/vt/lyrs=y@113&hl=zh-CN&gl=cn&x={x}&y={y}&z={z}&s=',
-						}),
-						visible: true,
-						id: 'baseLayer',
-					}),
+					// new TileLayer({
+					// 	source: new XYZ({
+					// 		url:
+					// 			'https://mt1.google.cn/vt/lyrs=y@113&hl=zh-CN&gl=cn&x={x}&y={y}&z={z}&s=',
+					// 	}),
+					// 	visible: true,
+					// 	id: 'baseLayer',
+					// }),
 				],
 				view: new View({
 					center: fromLonLat([108.13580457448796, 34.3243210417221]),

@@ -283,17 +283,6 @@
 					"checked": false
 				}
 			]
-		},
-		{
-			"label": "武功县三调遥感影像",
-			"children": [
-				{
-					"label": "武功县三调遥感影像",
-					"LAYERS": "智慧国土大数据展示平台:610431BJ2DOM1",
-					"id": 37,
-					"checked": false
-				}
-			]
 		}
 	]
 }

@@ -1,5 +1,5 @@
 <template>
-	<div>专题图制作</div>
+	<div>themeMap</div>
 </template>
 
 <script>

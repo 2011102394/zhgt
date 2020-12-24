@@ -21,7 +21,6 @@
 				show-checkbox
 				default-expand-all
 				:default-checked-keys="defaultChecked"
-				@node-click="handleNodeClick"
 				@check="handleNodeClick"
 			></el-tree>
 		</div>
@@ -59,9 +58,13 @@ export default {
 					}
 				})
 			}
-			const map = this.map 
-			const layers = map.getLayers();
+			const map = this.map
+			const layers = map.getLayers()
 			layers.array_[id].setVisible(addOrRemove)
+			// 关闭popup弹窗
+			const overlay = map.getOverlayById('attr-popup')
+			// 关闭弹窗
+			overlay.setPosition(undefined)
 		},
 	},
 	created: function() {

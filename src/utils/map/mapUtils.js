@@ -1,5 +1,6 @@
 import TileWMS from 'ol/source/TileWMS'
 import Tile from 'ol/layer/Tile'
+import XYZ from 'ol/source/XYZ'
 
 /**
  * 根据id查找对应的图层
@@ -31,9 +32,80 @@ const addLayer = (map, param, type) => {
 			addWMSTileLayer(map, param)
 			break
 		}
+		case 'XYZ': {
+			addXYZLayer(map, param)
+			break
+		}
 		default:
 			return
 	}
+}
+
+const addXYZLayer = (map, param) => {
+	const { url, id, visible } = param
+	const xyzLayer = new Tile({
+		id,
+		visible,
+		source: new XYZ({
+			url,
+		}),
+	})
+	map.addLayer(xyzLayer)
+}
+
+/**
+ * 创建图层
+ * @param {*} param
+ * @param {*} type
+ */
+const createLayer = (param, type) => {
+	let resLayer
+	switch (type) {
+		case 'WMS': {
+			resLayer = createWMSTileLayer(param)
+			break
+		}
+		case 'XYZ': {
+			resLayer = createXYZLayer(param)
+			break
+		}
+		default:
+			return
+	}
+	return resLayer
+}
+
+/**
+ * 创建xyzLayer
+ * @param {*} param
+ */
+const createXYZLayer = (param) => {
+	const { url, id, visible } = param
+	const xyzLayer = new Tile({
+		id,
+		visible,
+		source: new XYZ({
+			url,
+		}),
+	})
+	return xyzLayer
+}
+
+/**
+ * 创建WMSTileLayer图层
+ * @param {*} param
+ */
+const createWMSTileLayer = (param) => {
+	const { url, options, id } = param
+	const wmsTileLayer = new Tile({
+		id,
+		visible: param.visible,
+		source: new TileWMS({
+			url,
+			params: options,
+		}),
+	})
+	return wmsTileLayer
 }
 
 /**
@@ -42,18 +114,19 @@ const addLayer = (map, param, type) => {
  * @param {*} param 服务参数
  */
 const addWMSTileLayer = (map, param) => {
-  const { url, options, id } = param
+	const { url, options, id } = param
 	const wmsTileLayer = new Tile({
 		id,
-		visible:param.visible,
-		source:new TileWMS({
+		visible: param.visible,
+		source: new TileWMS({
 			url,
-			params:options
-		})
+			params: options,
+		}),
 	})
 	map.addLayer(wmsTileLayer)
 }
 export default {
 	findLayerById,
 	addLayer,
+	createLayer,
 }

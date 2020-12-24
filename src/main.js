@@ -5,7 +5,7 @@ import 'ol/ol.css'
 import less from 'less'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import "cesium/Build/Cesium/Widgets/widgets.css";
+
 Vue.config.productionTip = false
 Vue.use(less)
 Vue.use(ElementUI)
